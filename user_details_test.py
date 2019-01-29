@@ -28,41 +28,30 @@ class TestUser(unittest.TestCase):
 
     def test_save_user(self):
         '''
-        test_save_contact test case to test if the contact object is saved into
-         the contact list
+        test_save_credentials test case to test if the credentials object is saved into
+         the credentials list
         '''
-        self.user_details.save_user() # saving the new contact
+        self.user_details.save_user() # saving the new credentials
         self.assertEqual(len(User.user_details),1)
 
-    # setup and class creation up here
+    
     def tearDown(self):
             '''
             tearDown method that does clean up after each test case has run.
             '''
             User.user_details = []
 
-# other test cases here
+# saving multiple users
     def test_save_multiple_user(self):
             '''
-            test_save_multiple_contact to check if we can save multiple contact
+            test_save_multiple_credentials to check if we can save multiple credentials
             objects to our user_details
             '''
             self.user_details.save_user()
-            test_user = User("jimmy","jim123") # new contact
+            test_user = User("jimmy","jim123") # new credentials
             test_user.save_user()
             self.assertEqual(len(User.user_details),2)
 
-    # More tests above
-    # def test_delete_user(self):
-    #         '''
-    #         test_delete_contact to test if we can remove a contact from our contact list
-    #         '''
-    #         self.user_details.save_user()
-    #         test_user = User("jimmy","jim123") # new contact
-    #         test_user.save_user()
-    #
-    #         self.user_details.delete_user()# Deleting a contact object
-    #         self.assertEqual(len(User.user_details),1)
 
 
     def test_display_user(self):
