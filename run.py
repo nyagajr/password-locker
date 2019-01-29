@@ -68,29 +68,29 @@ def main():
                     print(f"New Credential {f_name} {l_name} created")
                     print ('\n')
 
-            # elif short_code == 'dc':
-            #
-            #         if display_credentials():
-            #                 print("Here is a list of all your credentials")
-            #                 print('\n')
-            #
-            #                 for credentials in display_credentials():
-            #                      print(f"first name: {credentials.first_name}\n\nlast name: {credentials.last_name}\n\nuser name: {credentials.user_name}\n\nphone number: {credentials.phone_number}\n\nemail: {credentials.email}\n\nyour password: {credentials.password}")
-            #
-            #                 print('\n')
-            #         else:
-            #                 print('\n')
-            #                 print("You dont seem to have any credentials saved yet")
-            #                 print('\n')
-            #
-            #
-            #
-            # elif short_code == "ex":
-            #                 print("Thank you for using password locker")
-            #                 break
-            #
-            # else:
-            #                 print("INVALID!! Please use the short codes provided")
+            elif short_code == 'dc':
+
+                    if display_credentials():
+                            print("Here is a list of all your credentials")
+                            print('\n')
+
+                            for credentials in display_credentials():
+                                 print(f"first name: {credentials.first_name}\n\nlast name: {credentials.last_name}\n\nuser name: {credentials.user_name}\n\nphone number: {credentials.phone_number}\n\nemail: {credentials.email}\n\nyour password: {credentials.password}")
+
+                            print('\n')
+                    else:
+                            print('\n')
+                            print("You dont seem to have any credentials saved yet")
+                            print('\n')
+
+
+
+            elif short_code == "ex":
+                            print("Thank you for using password locker")
+                            break
+
+            else:
+                            print("INVALID!! Please use the short codes provided")
 
 if __name__ == '__main__':
     main()
