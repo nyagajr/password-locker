@@ -32,8 +32,8 @@ def main():
     print("Hello Welcome to your credentials list. What is your name?")
     user_name = input()
 
-    print(f"Welcome {user_name}. what would you like to do?")
-    print('/n')
+    print(f"Welcome {user_name}. \n what would you like to do?")
+    print('\n')
 
     while True:
             print("Use these short codes : cc - create a new credentials, dc - display credentials, ex -exit the credentials list ")
