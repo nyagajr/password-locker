@@ -4,6 +4,7 @@ from credentials import Credentials
 from user_details import User
 
 def create_credentials(fname,lname,phone,email):
+def create_credentials(fname,lname,uname,phone,email,password):
     '''
     Function to create a new contact
     '''
