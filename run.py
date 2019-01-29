@@ -16,6 +16,7 @@ def save_credential(credentials):
     Function to save contact
     '''
     contact.save_credential()
+    credentials.save_credential()
 
 def delete_credential(credentials):
     '''
