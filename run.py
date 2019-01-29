@@ -58,6 +58,7 @@ def main():
                     e_address = input()
 
                     print("password ...")
+                    password = input()
 
                     save_contacts(create_contact(f_name,l_name,p_number,e_address)) # create and save new contact.
                     save_contacts(create_contact(f_name,l_name,u_name,p_number,e_address,password)) # create and save new contact.
