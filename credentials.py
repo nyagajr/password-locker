@@ -1,15 +1,15 @@
 #CLASS CREDENTIALS
 class Credentials:
     """
-    Class that generates new instances of contacts.
+    Class that generates new instances of credentials.
     """
 
-    credentials_list = [] # Empty contact list
+    credentials_list = []
 
     def save_credential(self):
 
         '''
-        save_contact method saves contact objects into credentials_list
+        save_credential method saves credentials objects into credentials_list
         '''
 
         Credentials.credentials_list.append(self)
@@ -17,7 +17,7 @@ class Credentials:
     def delete_credential(self):
 
         '''
-        delete_contact method deletes a saved contact from the credentials_list
+        delete_credential method deletes a saved credentials from the credentials_list
         '''
 
         Credentials.credentials_list.remove(self)
@@ -31,7 +31,6 @@ class Credentials:
 
     def __init__(self,first_name,last_name,user_name,number,email,password):
 
-      # docstring removed for simplicity
 
         self.first_name = first_name
         self.last_name = last_name
