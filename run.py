@@ -50,6 +50,7 @@ def main():
                     print("Last name ...")
                     l_name = input()
 
+                    u_name = input()
                     print("Phone number ...")
                     p_number = input()
 
