@@ -1,10 +1,10 @@
 import unittest # Importing the unittest module
-from credentials import Credentials # Importing the contact class
+from credentials import Credentials # Importing the credentials class
 
 class TestCredentials(unittest.TestCase):
 
     '''
-    Test class that defines test cases for the contact class behaviours.
+    Test class that defines test cases for the credentials class behaviours.
 
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
@@ -15,7 +15,7 @@ class TestCredentials(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_credential = Credentials("James","Muriuki","jimmy","0712345678","james@ms.com","jim123") # create contact object
+        self.new_credential = Credentials("James","Muriuki","jimmy","0712345678","james@ms.com","jim123") # create credentials object
 
 
     def test_init(self):
@@ -32,10 +32,10 @@ class TestCredentials(unittest.TestCase):
 
     def test_save_credential(self):
         '''
-        test_save_credential test case to test if the contact object is saved into
-         the contact list
+        test_save_credential test case to test if the credentials object is saved into
+         the credentials list
         '''
-        self.new_credential.save_credential() # saving the new contact
+        self.new_credential.save_credential() # saving the new credentials
         self.assertEqual(len(Credentials.credentials_list),1)
 
     # setup and class creation up here
@@ -48,24 +48,24 @@ class TestCredentials(unittest.TestCase):
 # other test cases here
     def test_save_multiple_credentials(self):
             '''
-            test_save_multiple_contact to check if we can save multiple contact
+            test_save_multiple_credentials to check if we can save multiple credentials
             objects to our credentials_list
             '''
             self.new_credential.save_credential()
-            test_credentials = Credentials("James","Muriuki","jimmy","0712345678","james@ms.com","jim123") # new contact
+            test_credentials = Credentials("James","Muriuki","jimmy","0712345678","james@ms.com","jim123") 
             test_credentials.save_credential()
             self.assertEqual(len(Credentials.credentials_list),2)
 
-    # More tests above
+
     def test_delete_credential(self):
             '''
-            test_delete_credential to test if we can remove a contact from our contact list
+            test_delete_credential to test if we can remove a credentials from our credentials list
             '''
             self.new_credential.save_credential()
-            test_credentials = Credentials("James","Muriuki","jimmy","0712345678","james@ms.com","jim123") # new contact
+            test_credentials = Credentials("James","Muriuki","jimmy","0712345678","james@ms.com","jim123") # new credentials
             test_credentials.save_credential()
 
-            self.new_credential.delete_credential()# Deleting a contact object
+            self.new_credential.delete_credential()# Deleting a credentials object
             self.assertEqual(len(Credentials.credentials_list),1)
 
     def test_display_all_credentials(self):
