@@ -60,6 +60,7 @@ def main():
                     print("password ...")
 
                     save_contacts(create_contact(f_name,l_name,p_number,e_address)) # create and save new contact.
+                    save_contacts(create_contact(f_name,l_name,u_name,p_number,e_address,password)) # create and save new contact.
                     print ('\n')
                     print(f"New Contact {f_name} {l_name} created")
                     print ('\n')
