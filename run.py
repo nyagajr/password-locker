@@ -67,6 +67,7 @@ def main():
                     save_contacts(create_contact(f_name,l_name,u_name,p_number,e_address,password)) # create and save new contact.
                     print ('\n')
                     print(f"New Contact {f_name} {l_name} created")
+                    print(f"New Credential {f_name} {l_name} created")
                     print ('\n')
 
                     elif short_code == 'dc':
