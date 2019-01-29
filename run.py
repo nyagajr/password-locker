@@ -52,6 +52,7 @@ def main():
                     print("Last name ...")
                     l_name = input()
 
+                    print("user name ...")
                     u_name = input()
                     print("Phone number ...")
                     p_number = input()
