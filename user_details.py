@@ -16,7 +16,7 @@ class User:
     # def delete_user(self):
     #
     #     '''
-    #     delete_contact method deletes a saved contact from the contact_list
+    #     delete_credentials method deletes a saved credentials from the credentials_list
     #     '''
     #
     #     User.user_details.remove(self)
