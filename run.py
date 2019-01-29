@@ -105,6 +105,7 @@ def main():
                     #         break
                     # else:
                     #         print("I really didn't get that. Please use the short codes")
+                                 print(f"first name: {credentials.first_name}\n\nlast name: {credentials.last_name}\n\nuser name: {credentials.user_name}\n\nphone number: {credentials.phone_number}\n\nemail: {credentials.email}\n\nyour password: {credentials.password}")
 
 if __name__ == '__main__':
     main()
